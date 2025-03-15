@@ -1,24 +1,36 @@
 /* General styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
 header {
     background-color: #333;
-    padding: 10px 0;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
 }
 
 header nav ul {
     list-style: none;
-    text-align: center;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -34,25 +46,34 @@ header nav ul li a:hover {
 /* Section styles */
 section {
     padding: 50px 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
 }
 
-#about {
-    background-color: #fff;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-#skills, #projects, #contact {
-    background-color: #e0e0e0;
-}
-
-/* Project box */
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .project h3 {
     font-size: 24px;
-    margin: 10px 0;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .project p {
@@ -60,10 +81,46 @@ section {
     color: #555;
 }
 
-/* Footer */
+/* Contact section */
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
 }
