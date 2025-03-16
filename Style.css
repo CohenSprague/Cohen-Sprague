@@ -11,6 +11,9 @@ body {
     background-color: #f8f8f8;
     color: #333;
 }
+p {
+    text-indent: 20px; /* Adjust the value as needed */
+}
 
 /* Header styles */
 header {
