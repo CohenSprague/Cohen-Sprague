@@ -106,6 +106,16 @@ ul {
 #skills ul li strong {
     color: #222; /* Darker text for emphasis */
 }
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skills-list {
+    width: 65%;
+}
+
 #strengths {
     width: 30%;
     background-color: #eef2f7;
@@ -119,15 +129,17 @@ ul {
     border-bottom: 2px solid #0073e6;
     padding-bottom: 8px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .strength {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .strength span {
     display: block;
     font-size: 14px;
+    font-weight: bold;
     color: #222;
     margin-bottom: 5px;
 }
@@ -138,12 +150,14 @@ ul {
     height: 10px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .progress-bar {
     background-color: #0073e6;
     height: 100%;
     border-radius: 5px;
+    transition: width 0.6s ease-in-out;
 }
 
 .project {
