@@ -73,6 +73,39 @@ ul {
     font-size: 16px;
     line-height: 1.6;
 }
+#skills {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#skills h2 {
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #0073e6; /* Blue underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#skills h3 {
+    color: #0073e6; /* Professional blue */
+    margin-top: 20px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#skills ul li strong {
+    color: #222; /* Darker text for emphasis */
+}
 
 .project {
     margin-bottom: 40px;
