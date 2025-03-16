@@ -48,24 +48,27 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
 }
-.resume-download {
-    text-align: center;
-    margin-top: 20px;
-}
-
+/* Style for the resume download button */
 .resume-button {
     display: inline-block;
-    padding: 12px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #0073e6;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    padding: 12px 24px; /* More padding for a larger button */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
 }
 
 .resume-button:hover {
-    background-color: #005bb5;
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.resume-button:active {
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
 }
 
 /* Section styles */
